@@ -1,0 +1,352 @@
+/* Common */
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('C:/Users/KETAKI/OneDrive/Desktop/gym-tracker/public/gym.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Layout */
+.main {
+  display: flex;
+}
+
+.container {
+  width: 100%;
+}
+
+/* login */
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: white;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin: 20vh auto;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: white;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: white;
+  margin-right: 4px;
+}
+
+.remember-forgot a {
+  color: white;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper button {
+  width: 100%;
+  height: 45px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+}
+
+.wrapper .register-link {
+  font-size: 14.5pxs;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidewrapper {
+  width: 250px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: white;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  padding: 30px 0px;
+  height: 100vh;
+  font-size: 18px;
+  padding-top: 10px;
+  position: sticky;
+}
+
+.sidewrapper h1 {
+  font-size: 28px;
+  text-align: center;
+  height: 70px;
+
+}
+
+.sidebar {
+  padding: 10px 0;
+}
+
+.sidebtn {
+  padding: 0 0 40px;
+  width: 100%;
+  height: 45px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+/* .sidebtn:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+
+} */
+
+/* Navbar */
+.navwrapper {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: white;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  padding: 20px 30px;
+  height: 70px;
+  position: sticky;
+}
+
+.navwrapper a {
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 0px 30px;
+  border: 0;
+  margin-top: 0;
+  font-size: 18px;
+
+}
+
+.navwrapper a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.home-container {}
+
+/* Profile */
+.profile {
+  width: 100%;
+  display: flex;
+  padding: 15px;
+}
+
+.top-profile {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin: 5px 20px;
+  color: white;
+}
+.edit-profile-text{
+  display: flex;
+  font-size: 15px;
+}
+.top-profile h1{
+  display: inline;
+}
+.my-profile{
+  color: darkgrey;
+}
+.save-btn {
+  width: 120px;
+  height: 45px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  right: 10px;
+}
+.bottom-profile{
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: white;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  /* justify-content: space-between; */
+}
+.left-profile{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 40vw;
+  height: auto;
+  /* border: 2px solid black; */
+  
+}
+
+.user-image {
+  display: flex;
+  position: relative;
+  background: grey;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 5px auto;
+}
+
+.name, .contact, .region{
+  display: flex;
+}
+.name label{ 
+  margin:10px;
+  padding-top: 20px;
+}
+.name input{
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  width: 33vh;
+  height: 5vh;
+  padding: 20px;
+  color: white;
+}
+form label{
+  margin:10px;
+  padding-top: 20px;
+}
+form input{
+  width: 90%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  height: 5vh;
+  margin: 10px;
+  padding: 20px;
+  color: white;
+}
+
+.right-profile{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 40vw;
+  height: auto;
+  /* border: 2px solid black; */
+}
+
+
+.right label{
+  margin:10px;
+  padding-top: 20px;
+}
+select{
+  width: 90%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  height: 5vh;
+  margin: 10px;
+  padding: 20px;
+  color: white;
+}
+/* select{
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  height: 5vh;
+  margin: 10px;
+  padding: 20px;
+  color: white; 
+} */
